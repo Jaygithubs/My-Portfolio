@@ -1,24 +1,25 @@
-
+import React from 'react'
+import Header from '../src/components/header/header'
+import Home from '../src/components/home/home'
+import About from '../src/components/About/about_me'
+import Services from '../src/components/services/services'
+import Projects from '../src/components/Projects/projects'
 
 function App() {
   return (
     <>
-    <section classname="">
-      <div className="h-screen bg-slate-950 text-white">
-        <div className="header h-10 bg-slate-900 flex justify-between">
-          <img src="/js.jpg" alt="logo-of-jay" className="w-10"/>
-          <h2 className="p-3">I am heaader</h2>
-        </div>
-      </div>
+    <Header/>
+    <section id="home">
+      <Home/>
     </section>
-    <section classname="">
-      <div className="h-screen bg-slate-950 text-white">About me</div>
+    <section id="about_me">
+      <About/>
     </section>
-    <section classname="">
-      <div className="h-screen bg-slate-950 text-white">Services</div>
+    <section id="services">
+      <Services/>
     </section>
-    <section classname="">
-      <div className="h-screen bg-slate-950 text-white">Projects</div>
+    <section id="projects">
+      <Projects/>
     </section>
     </>
   );
