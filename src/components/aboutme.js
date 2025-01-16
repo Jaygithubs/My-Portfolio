@@ -2,7 +2,7 @@ import React from 'react'
 
 const aboutme = (props) => {
   return (
-    <div className={props.mode}>
+    <div>
       <div className="text-3xl font-mono">About me</div>
       <div>
       I am a passionate Full Stack Web Developer with experience in building and maintaining websites. I

@@ -2,7 +2,7 @@ import React from 'react'
 
 const education = (props) => {
   return (
-    <div className={props.mode}>
+    <div>
       <div className="text-3xl font-mono">Education</div>
       <div className="flex justify-between my-2 uppercase">
         <div>Bachelor of Computer Application (BCA)<div className='capitalize text-sm'>Mahatma Gandhi Kashi Vidyapith University</div>

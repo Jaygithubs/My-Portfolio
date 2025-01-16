@@ -2,7 +2,7 @@ import React from 'react'
 
 const experience = (props) => {
   return (
-    <div className={props.mode}>
+    <div>
       <div className="text-3xl font-mono">My Work Experience</div>
       <div className="flex justify-between uppercase my-2">
         <div>FULL STACK WEB DEVELOPER</div>

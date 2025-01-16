@@ -64,7 +64,7 @@ const ProjectsSection = () => {
               <h3 className="text-xl font-semibold text-white">{project.title}</h3>
               <p className="text-slate-400 mt-2">{project.description}</p>
               <a
-                href={project.link} target='_blank'
+                href={project.link} target='_blank' rel="noreferrer"
                 className="mt-4 inline-block text-blue-400 hover:text-blue-600 transition-colors"
               >
                 View Project
