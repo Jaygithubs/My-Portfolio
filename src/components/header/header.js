@@ -21,10 +21,8 @@ const Header = () => {
   return (
       <div ref={header_main} className='z-50 py-2 bg-transparent fixed top-0 left-0 right-0 text-white h-fit grid grid-cols-2 transition ease-in-out delay-75'>
         <div className="logo ml-28 p-2">
-            <motion.div className="name text-3xl"
-            animate={{scaleX:1.1}}
-            transition={{repeat:Infinity,duration:1}}
-            >Jay sharma</motion.div>
+            <div className="name text-3xl"
+            >Jay sharma</div>
         </div>
         <div className="links m-auto">
             <ul className="space-x-5 flex ">

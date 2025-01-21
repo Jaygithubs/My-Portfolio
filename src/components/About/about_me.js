@@ -17,7 +17,11 @@ const About_me = () => {
     <>
       <div className="px-32 py-24 h-screen bg-slate-950 text-white">
 
-        <div className="main grid grid-cols-12">
+        <motion.div className="main grid grid-cols-12"
+        initial={{opacity:0,translateY:-50}}
+        whileInView={{opacity:1,translateY:0}}
+        transition={{duration:1}}
+        >
           <div className="left-side border p-5 col-span-4">
             <div className="text-4xl font-mono">Why hire me?</div>
             <div className="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, aperiam.</div>
@@ -49,7 +53,7 @@ const About_me = () => {
             {activesec === 'about-me' ? <Aboutme/> : ""}  
 
           </div>
-        </div>
+        </motion.div>
 
       </div>
     </>

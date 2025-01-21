@@ -1,8 +1,13 @@
+import { motion } from 'framer-motion'
 import React from 'react'
 
 const education = (props) => {
   return (
-    <div>
+    <motion.div
+    initial={{opacity:0,translateY:-50}}
+    whileInView={{opacity:1,translateY:0}}
+    transition={{duration:1}}
+    >
       <div className="text-3xl font-mono">Education</div>
       <div className="flex justify-between my-2 uppercase">
         <div>Bachelor of Computer Application (BCA)<div className='capitalize text-sm'>Mahatma Gandhi Kashi Vidyapith University</div>
@@ -16,7 +21,7 @@ const education = (props) => {
             technologies in parallel with professional experience.</li>
         </ul>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

@@ -3,7 +3,11 @@ import React from 'react'
 
 const skills = (props) => {
   return (
-    <div>
+    <motion.div
+    initial={{opacity:0,translateY:-50}}
+    whileInView={{opacity:1,translateY:0}}
+    transition={{duration:1}}
+    >
       <div className="text-3xl font-mono">Skills</div>
       <div className="skill-parent grid grid-cols-4 gap-5 p-5">
         <motion.div className="skills"
@@ -108,7 +112,7 @@ const skills = (props) => {
         </motion.div>
 
       </div>
-    </div>
+    </motion.div>
   )
 }
 

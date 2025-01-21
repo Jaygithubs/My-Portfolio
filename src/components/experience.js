@@ -1,8 +1,13 @@
+import { motion } from 'framer-motion'
 import React from 'react'
 
 const experience = (props) => {
   return (
-    <div>
+    <motion.div
+    initial={{opacity:0,translateY:-50}}
+    whileInView={{opacity:1,translateY:0}}
+    transition={{duration:1}}
+    >
       <div className="text-3xl font-mono">My Work Experience</div>
       <div className="flex justify-between uppercase my-2">
         <div>FULL STACK WEB DEVELOPER</div>
@@ -20,7 +25,7 @@ const experience = (props) => {
         <li>Developed and implemented RESTful API calls using JavaScript (Fetch API, AJAX) for seamless data communication between WordPress sites and external services.</li>
         <li>Worked closely with the company’s CRM system built on CodeIgniter, managing data flow between WordPress sites and the CRM. </li>
       </ul>
-    </div>
+    </motion.div>
   )
 }
 

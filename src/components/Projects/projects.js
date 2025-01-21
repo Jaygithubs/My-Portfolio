@@ -33,15 +33,14 @@ const projects = [
 const ProjectsSection = () => {
   return (
     <section className="px-6 py-12 bg-slate-950">
-      {/* Section Title */}
-      <motion.h2
-        className="text-4xl font-semibold text-center text-white mb-12"
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7 }}
+      <motion.div
+      initial={{opacity:0,translateY:-50}}
+      whileInView={{opacity:1,translateY:0}}
+      transition={{duration:1}}
       >
+      <h2 className="text-4xl font-semibold text-center text-white mb-12">
         My Projects
-      </motion.h2>
+      </h2>
 
       {/* Projects Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -75,6 +74,8 @@ const ProjectsSection = () => {
           </motion.div>
         ))}
       </div>
+
+      </motion.div>
     </section>
   );
 };

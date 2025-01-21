@@ -4,6 +4,7 @@ import Home from '../src/components/home/home'
 import About from '../src/components/About/about_me'
 import Services from '../src/components/services/services'
 import Projects from '../src/components/Projects/projects'
+import Footer from './components/footer'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
     <section id="projects">
       <Projects/>
     </section>
+    <Footer/>
     </>
   );
 }
